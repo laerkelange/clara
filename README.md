@@ -8,7 +8,7 @@ Clara er OK's designsystem. Det indeholder fonte, farver, typografi, komponenter
 
 ## Kom godt i gang
 
-Du behøver kun ét link. Kopier det og indsæt det i starten af din prompt i Claude, ChatGPT eller et andet AI-værktøj:
+Du behøver kun ét link. Kopier det og indsæt det i starten af din prompt i dit AI-værktøj:
 
 ```
 https://raw.githubusercontent.com/laerkelange/clara/main/OK-DESIGN.md
