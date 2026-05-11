@@ -1,40 +1,58 @@
-# Clara
-Clara — OK's internal design system. Design tokens and Web Components built from Figma.
+# Clara — OK's designsystem
 
-## Figma
-The source of truth for Clara lives in Figma:
-- **Figma file:** https://www.figma.com/design/fDsr4AP1RiVYLC2WlUflaL/Clara?node-id=25-1736&m=dev
+Clara er OK's designsystem. Det indeholder fonte, farver, typografi, komponenter og brandretningslinjer — alt hvad du behøver for at bygge prototyper og indhold der ser ud og lyder som OK.
 
-## Setup
-1. Clone the repository:
-```bash
-   git clone https://github.com/laerkelange/clara.git
-   cd clara
+> **Clara er under opbygning.** Vi tilføjer løbende nye komponenter og retningslinjer. Du er velkommen til at bruge det vi har nu, men forvent at systemet vokser og udvikler sig.
+
+---
+
+## Kom godt i gang
+
+Du behøver kun ét link. Kopier det og indsæt det i starten af din prompt i Claude, ChatGPT eller et andet AI-værktøj:
+
 ```
-2. Install dependencies:
-```bash
-   npm install
+https://raw.githubusercontent.com/laerkelange/clara/main/OK-DESIGN.md
 ```
-3. Build CSS variables from design tokens:
-```bash
-   npx style-dictionary build --config sd.config.json
+
+AI'en henter selv alle retningslinjer og ved automatisk hvornår den skal bruge designsystemet og hvornår den skal bruge brandreglerne.
+
+---
+
+## Eksempler på prompts
+
+**Byg en prototype:**
 ```
-   This generates `tokens/dist/tokens.css` from the JSON source files in `tokens/src/`.
+Brug disse retningslinjer: https://raw.githubusercontent.com/laerkelange/clara/main/OK-DESIGN.md
 
-## Structure
-- `tokens/src/` — design token JSON files exported from Figma (source of truth)
-- `tokens/dist/` — generated CSS variables (do not edit manually)
-- `components/` — Web Components
-- `sd.config.json` — Style Dictionary config for building tokens
-
-## Token usage
-Import the generated CSS file and use variables in your components:
-```css
-@import 'tokens/dist/tokens.css';
-
-.my-element {
-  color: var(--color-content-default);
-  background: var(--color-backgrounds-default);
-  padding: var(--padding-buttons-large-vertical) var(--padding-buttons-large-horizontal);
-}
+Byg en simpel landingsside for OK Ladepakke med en overskrift, tre fordele og en primær knap.
 ```
+
+**Skriv tekst:**
+```
+Brug disse retningslinjer: https://raw.githubusercontent.com/laerkelange/clara/main/OK-DESIGN.md
+
+Skriv en kort introduktionstekst til OK's nye ladepark i Aarhus i OK's tone of voice.
+```
+
+**Lav en formular:**
+```
+Brug disse retningslinjer: https://raw.githubusercontent.com/laerkelange/clara/main/OK-DESIGN.md
+
+Lav en tilmeldingsformular til OK Nyhedsbrev med navn, e-mail og en primær knap.
+```
+
+---
+
+## Feedback og fejl
+
+Vi er meget interesserede i at høre hvad du synes — både hvad der virker og hvad der ikke gør.
+
+Kontakt os hvis du:
+- Oplever fejl eller noget der ikke ser rigtigt ud
+- Mangler et specifikt komponent eller en retningslinje
+- Har feedback eller idéer til forbedringer
+
+**Kathrine Bock** — UX/UI Designer — kabo@ok.dk
+**Lærke Høj Lange** — UX/UI Designer — lahl@ok.dk
+
+Jo mere feedback vi får, jo bedre bliver Clara.

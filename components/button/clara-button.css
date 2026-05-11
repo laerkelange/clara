@@ -1,0 +1,103 @@
+@import "../../tokens/dist/tokens.css";
+
+:host {
+  display: inline-block;
+}
+:host(:focus-within) .clara-button__control {
+  outline: 2px solid var(--color-border-focus);
+  outline-offset: 2px;
+}
+
+/* ─── BASE ─────────────────────────────────────── */
+
+.clara-button__control {
+  appearance: none;
+  background: var(--color-actions-button-primary-background);
+  color: var(--color-actions-button-primary-text);
+  border: 1px solid transparent;
+  border-radius: calc(var(--corner-radius-button) * 1px);
+  padding: calc(var(--padding-buttons-small-vertical) * 1px) calc(var(--padding-buttons-small-horizontal) * 1px);
+  gap: calc(var(--padding-buttons-small-gap) * 1px);
+  font-family: Fellix, Georgia, sans-serif;
+  font-size: calc(var(--typography-actions-button-small-font-size) * 1px);
+  line-height: calc(var(--typography-actions-button-small-line-height) * 1px);
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+  transition: opacity 160ms ease, border-color 160ms ease;
+}
+
+.clara-button__control::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: transparent;
+  transition: background 160ms ease;
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+/* ─── PRIMARY STATES ────────────────────────────── */
+
+.clara-button__control:hover:not(:disabled)::before {
+  background: var(--color-overlay-white-10);
+}
+
+.clara-button__control:active:not(:disabled)::before {
+  background: var(--color-overlay-black-50);
+}
+
+
+.clara-button__control:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ─── LARGE SIZE ────────────────────────────────── */
+
+.clara-button__control[data-size="large"] {
+  padding: calc(var(--padding-buttons-large-vertical) * 1px) calc(var(--padding-buttons-large-horizontal) * 1px);
+  font-size: calc(var(--typography-actions-button-large-font-size) * 1px);
+  line-height: calc(var(--typography-actions-button-large-line-height) * 1px);
+}
+
+/* ─── SECONDARY ─────────────────────────────────── */
+
+.clara-button__control[data-variant="secondary"] {
+  background: var(--color-actions-button-secondary-background);
+  color: var(--color-actions-button-secondary-text);
+  border: 2px solid var(--color-border-bold);
+}
+
+.clara-button__control[data-variant="secondary"]:hover:not(:disabled)::before {
+  background: var(--color-overlay-black-10);
+}
+
+.clara-button__control[data-variant="secondary"]:active:not(:disabled)::before {
+  background: var(--color-overlay-black-50);
+}
+
+/* ─── LOADING ───────────────────────────────────── */
+
+.clara-button__control--loading {
+  cursor: progress;
+}
+
+.clara-button__control--loading .clara-button__label {
+  opacity: 0;
+}
+
+/* ─── CONTENT LAYOUT ────────────────────────────── */
+
+.clara-button__content {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: calc(var(--padding-buttons-small-gap) * 1px);
+}
