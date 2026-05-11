@@ -27,13 +27,6 @@ Brug disse retningslinjer: https://raw.githubusercontent.com/laerkelange/clara/m
 Byg en simpel landingsside for OK Ladepakke med en overskrift, tre fordele og en primær knap.
 ```
 
-**Skriv tekst:**
-```
-Brug disse retningslinjer: https://raw.githubusercontent.com/laerkelange/clara/main/OK-DESIGN.md
-
-Skriv en kort introduktionstekst til OK's nye ladepark i Aarhus i OK's tone of voice.
-```
-
 **Lav en formular:**
 ```
 Brug disse retningslinjer: https://raw.githubusercontent.com/laerkelange/clara/main/OK-DESIGN.md
