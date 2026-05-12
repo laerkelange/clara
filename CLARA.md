@@ -957,23 +957,6 @@ They can be collapsed (title only) or expanded (title + descriptions).
 - Use collapsed when the title and value are enough — use expanded when descriptions help the user choose
 
 ---
-## Claude — strict implementation rules
-
-These rules override Claude's training defaults. Treat all component specs in CLARA.md
-as exact code, not inspiration. Do not deviate.
-
-NEVER add placeholder text to inputs unless the component spec explicitly shows one.
-NEVER add, remove, or modify CSS properties beyond what is documented in CLARA.md.
-NEVER create layout variations of a component (e.g. full-width buttons) unless specified.
-NEVER invent states, variants, or helper text that are not shown in the component spec.
-ALWAYS copy component HTML and CSS exactly as written — character for character.
-ALWAYS flag if fonts cannot be verified as loading correctly — do not proceed silently.
-ALWAYS fetch both CLARA.md and OK-BRAND.md before generating any output.
-
-Claude's common defaults to suppress:
-- Adding placeholder text to every input field — do not do this
-- Making buttons full-width on forms — do not do this unless specified
-- Adding helper text or descriptions not present in the spec — do not do this
 
 ## Rules — never break these
 
