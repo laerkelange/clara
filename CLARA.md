@@ -13,7 +13,7 @@ Always load these fonts before using any Clara component or styling:
 ```css
 @font-face {
   font-family: 'OK family';
-  src: url('https://raw.githubusercontent.com/laerkelange/clara/main/fonts/OKfamily-Bold.woff2') format('woff2');
+  src: url('https://cdn.ok.dk/wok/fonts/ok-family/okfamily-bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -21,7 +21,7 @@ Always load these fonts before using any Clara component or styling:
 
 @font-face {
   font-family: 'OK family';
-  src: url('https://raw.githubusercontent.com/laerkelange/clara/main/fonts/OKfamily-Semibold.woff2') format('woff2');
+  src: url('https://cdn.ok.dk/wok/fonts/ok-family/okfamily-semibold.woff2') format('woff2');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -29,7 +29,7 @@ Always load these fonts before using any Clara component or styling:
 
 @font-face {
   font-family: 'Fellix';
-  src: url('https://raw.githubusercontent.com/laerkelange/clara/main/fonts/Fellix-Regular.woff2') format('woff2');
+  src: url('https://cdn.ok.dk/wok/fonts/fellix/Fellix-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -37,7 +37,7 @@ Always load these fonts before using any Clara component or styling:
 
 @font-face {
   font-family: 'Fellix';
-  src: url('https://raw.githubusercontent.com/laerkelange/clara/main/fonts/Fellix-Medium.woff2') format('woff2');
+  src: url('https://cdn.ok.dk/wok/fonts/fellix/Fellix-Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -45,7 +45,7 @@ Always load these fonts before using any Clara component or styling:
 
 @font-face {
   font-family: 'Fellix';
-  src: url('https://raw.githubusercontent.com/laerkelange/clara/main/fonts/Fellix-SemiBold.woff2') format('woff2');
+  src: url('https://cdn.ok.dk/wok/fonts/fellix/Fellix-SemiBold.woff2') format('woff2');
   font-weight: 600;
   font-style: normal;
   font-display: swap;

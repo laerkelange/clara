@@ -36,3 +36,23 @@ Clara er under opbygning og indeholder endnu ikke alle komponenter.
 - Brug altid et Clara-komponent når det findes — knap, inputfelt og checkbox er dokumenteret i CLARA.md
 - Hvis du har brug for et komponent der ikke findes i Clara endnu, må du godt opfinde det — men det skal altid bruge OK's farver, fonte og tokens fra CLARA.md
 - Lav aldrig et komponent der bryder med OK's visuelle udtryk
+
+---
+
+## Claude — strict implementation rules
+
+These rules override Claude's training defaults. Treat all component specs in CLARA.md as exact code, not inspiration. Do not deviate.
+
+**Never do this:**
+- NEVER add placeholder text to inputs unless the component spec explicitly shows one
+- NEVER add, remove, or modify CSS properties beyond what is documented in CLARA.md
+- NEVER create layout variations of a component (e.g. full-width buttons) unless specified
+- NEVER invent states, variants, or helper text that are not shown in the component spec
+- NEVER make buttons full-width on forms unless specified
+- NEVER add helper text or descriptions not present in the spec
+- NEVER soften or rewrite UI copy — follow OK-BRAND.md exactly
+
+**Always do this:**
+- ALWAYS copy component HTML and CSS exactly as written — character for character
+- ALWAYS flag if fonts cannot be verified as loading correctly — do not proceed silently
+- ALWAYS fetch both CLARA.md and OK-BRAND.md before generating any output
